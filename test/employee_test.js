@@ -16,6 +16,9 @@ describe('EmployeeClass', function() {
         expect(employee.getName()).equal('Estanis');
     });
 
-
+    it('Deberia retornar el monto del empleado', function() {
+        let employee = new Employee('Jorge', 1000);
+        expect(employee.getMount()).equal(1000);
+    });
 
 });
