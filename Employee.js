@@ -8,7 +8,7 @@ Employee.prototype.getName = function() {
 };
 
 Employee.prototype.getMount = function() {
-
+    return this.mount;
 };
 
 if (typeof window === "undefined") {
