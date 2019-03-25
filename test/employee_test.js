@@ -29,7 +29,11 @@ describe('EmployeeClass', function() {
 
     it('Deberia retornar el sueldo del empleado fijo', function() {
         let employee = new Employee('Jorge', 1000);
-        expect(ticketGenerator.getSalary()).equal(10000);
+        expect(ticketGenerator.getSalary(employee)).equal(10000);
+        employee = new Employee('Alvaro', 2000);
+        expect(ticketGenerator.getSalary(employee)).equal(20000);
+        employee = new Employee('Jorge', 3000);
+        expect(ticketGenerator.getSalary(employee)).equal(30000);
     });
 
 });

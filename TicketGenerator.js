@@ -2,8 +2,8 @@ let TicketGenerator = function() {
 
 };
 
-TicketGenerator.prototype.getSalary = function() {
-    return 10000;
+TicketGenerator.prototype.getSalary = function(employee) {
+    return employee.getMount() * 10;
 }
 
 if (typeof window === "undefined") {
