@@ -1,7 +1,8 @@
 class Employee {
 
-    constructor(name) {
+    constructor(name, type) {
         this.name = name;
+        this.type = type;
     }
 
     getName() {
@@ -9,7 +10,7 @@ class Employee {
     }
 
     getType() {
-        return 'Fijo';
+        return this.type;
     }
 }
 
