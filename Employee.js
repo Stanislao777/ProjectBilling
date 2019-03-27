@@ -1,8 +1,9 @@
 class Employee {
 
-    constructor(name, type) {
+    constructor(name, type, mount_kardex) {
         this.name = name;
         this.type = type;
+        this.mountKardex = mount_kardex;
     }
 
     getName() {
@@ -14,7 +15,7 @@ class Employee {
     }
 
     getSalary() {
-        return 1000;
+        return this.mountKardex;
     }
 }
 
