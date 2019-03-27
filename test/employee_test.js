@@ -13,4 +13,10 @@ describe('EmployeeClass', function() {
         let employee = new Employee('Alvaro');
         expect(employee.getName()).equal('Alvaro');
     });
+
+    it('Deberia retornar el tipo Fijo para Jorge', function() {
+        let employee = new Employee('Jorge', 'Fijo');
+        expect(employee.getType()).equal('Fijo');
+    });
+
 });

@@ -8,6 +8,9 @@ class Employee {
         return this.name;
     }
 
+    getType() {
+        return 'Fijo';
+    }
 }
 
 module.exports = Employee;
