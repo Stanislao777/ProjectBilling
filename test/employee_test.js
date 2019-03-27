@@ -8,4 +8,9 @@ describe('EmployeeClass', function() {
         let employee = new Employee('Jorge');
         expect(employee.getName()).equal('Jorge');
     });
+
+    it('Deberia retornar el nombre de Alvaro', function() {
+        let employee = new Employee('Alvaro');
+        expect(employee.getName()).equal('Alvaro');
+    });
 });

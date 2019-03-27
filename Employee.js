@@ -1,7 +1,11 @@
 class Employee {
 
+    constructor(name) {
+        this.name = name;
+    }
+
     getName() {
-        return 'Jorge';
+        return this.name;
     }
 
 }
