@@ -1,10 +1,10 @@
 class Employee {
 
-    constructor(name, type, mount_kardex) {
+    constructor(name, type, mount_kardex, scheduleTable) {
         this.name = name;
         this.type = type;
         this.mountKardex = mount_kardex;
-        //this.scheduleTable = scheduleTable;
+        this.scheduleTable = scheduleTable;
     }
 
     getName() {
@@ -17,8 +17,7 @@ class Employee {
 
     getSalary() {
         if(this.type === 'Horas') {
-            return 400;
-            //return this.mountKardex * this.scheduleTable.getHours();
+            return this.mountKardex * this.scheduleTable.getHours();
         }
         return this.mountKardex;
     }

@@ -44,4 +44,13 @@ describe('EmployeeClass', function() {
         expect(employee.getSalary()).equal(400);
     });
 
+    it('Deberia retornar el sueldo para Rodrigo', function() {
+        let schedule = new ScheduleTable([
+            ['2019-05-21 14:00:00', '2019-05-21 16:00:00'],
+            ['2019-05-21 18:00:00', '2019-05-21 21:00:00']
+        ]);
+        let employee = new Employee('Rodrigo', 'Horas', 200, schedule);
+        expect(employee.getSalary()).equal(1000);
+    });
+
 });
