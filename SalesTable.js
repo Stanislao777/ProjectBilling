@@ -5,7 +5,11 @@ class SalesTable {
     }
 
     getMoney() {
-        return this.salesLogs[0][1];
+        let response = 0;
+        this.salesLogs.forEach(sales => {
+            response += sales[1];
+        })
+        return response;
     }
 }
 
