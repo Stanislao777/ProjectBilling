@@ -1,6 +1,11 @@
 class SalesTable {
+
+    constructor(salesLogs) {
+        this.salesLogs = salesLogs;
+    }
+
     getMoney() {
-        return 1000;
+        return this.salesLogs[0][1];
     }
 }
 
