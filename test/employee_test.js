@@ -24,4 +24,9 @@ describe('EmployeeClass', function() {
         expect(employee.getType()).equal('Horas');
     });
 
+    it('Deberia retornar el sueldo para Jorge', function() {
+        let employee = new Employee('Jorge', 'Fijo', 1000);
+        expect(employee.getSalary()).equal(1000);
+    });
+
 });

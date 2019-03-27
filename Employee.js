@@ -12,6 +12,10 @@ class Employee {
     getType() {
         return this.type;
     }
+
+    getSalary() {
+        return 1000;
+    }
 }
 
 module.exports = Employee;
