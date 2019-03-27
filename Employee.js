@@ -1,6 +1,5 @@
 class Employees{
-    constructor(ci, name, mount){
-        this.ci=ci;
+    constructor(name, type, mount_kadex, hours, comission_percentage,sales){
         this.name=name;
         this.mount=mount;
     }
@@ -38,4 +37,7 @@ class Comision extends Employees{
     }
 }*/
 
+let inDate = new Date('2019-05-21 14:00:00');
+let outDate = new Date('2019-05-21 16:01:00');
 
+//console.log(Number.parseInt((outDate - inDate) / 3600000));
