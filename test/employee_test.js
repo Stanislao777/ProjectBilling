@@ -1,6 +1,7 @@
 let expect = require('chai').expect;
 
 import Employee from '../Employee.js';
+import ScheduleTable from '../ScheduleTable.js';
 
 describe('EmployeeClass', function() {
 
@@ -32,6 +33,15 @@ describe('EmployeeClass', function() {
     it('Deberia retornar el sueldo para Alvaro', function() {
         let employee = new Employee('Alvaro', 'Fijo', 2000);
         expect(employee.getSalary()).equal(2000);
+    });
+
+    it('Deberia retornar el sueldo para Kevin', function() {
+        let schedule = new ScheduleTable([
+            ['2019-05-21 14:00:00', '2019-05-21 16:00:00'],
+            ['2019-05-21 18:00:00', '2019-05-21 20:00:00']
+        ]);
+        let employee = new Employee('Kevin', 'Horas', 100, schedule);
+        expect(employee.getSalary()).equal(400);
     });
 
 });
