@@ -25,5 +25,4 @@ describe('ScheduleTableClass', function() {
         ]);
         expect(schedule.getHours()).equal(4);
     });
-
 });
