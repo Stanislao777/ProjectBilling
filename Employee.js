@@ -1,10 +1,12 @@
 class Employee {
 
-    constructor(name, type, mount_kardex, scheduleTable) {
+    constructor(name, type, mount_kardex, scheduleTable, commision_percentage, sales) {
         this.name = name;
         this.type = type;
         this.mountKardex = mount_kardex;
         this.scheduleTable = scheduleTable;
+        this.commisionPercentage = commision_percentage;
+        this.sales = sales;
     }
 
     getName() {
@@ -26,7 +28,7 @@ class Employee {
     }
 
     getCommision() {
-        return 4000;
+        return this.mountKardex + this.commisionPercentage * this.sales.getMoney();
     }
 }
 
