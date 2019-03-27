@@ -19,7 +19,10 @@ class Employee {
         if(this.type === 'Horas') {
             return this.mountKardex * this.scheduleTable.getHours();
         }
-        return this.mountKardex;
+        if(this.type === 'Fijo') {
+            return this.mountKardex;
+        }
+        throw new Error('Empleado no especificado');
     }
 }
 
