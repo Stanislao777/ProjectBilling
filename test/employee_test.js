@@ -81,4 +81,17 @@ describe('EmployeeClass', function() {
         expect(employee.getCommision()).equal(6000);
     });
 
+    it('Deberia retornar la comision de Jorge', function() {
+        let schedule = new ScheduleTable([
+            ['2019-05-21 14:00:00', '2019-05-21 16:00:00'],
+            ['2019-05-21 18:00:00', '2019-05-21 21:00:00']
+        ]);
+        let sales = new SalesTable([
+            ['2019-05-21 14:00:00', 4000],
+            ['2019-05-21 15:00:00', 4000]
+        ]);
+        let employee = new Employee('Jorge', 'Horas', 200, schedule, 0.5, sales);
+        expect(employee.getCommision()).equal(5000);
+    });
+
 });

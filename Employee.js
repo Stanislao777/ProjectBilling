@@ -28,7 +28,7 @@ class Employee {
     }
 
     getCommision() {
-        return this.mountKardex + this.commisionPercentage * this.sales.getMoney();
+        return this.getSalary() + this.commisionPercentage * this.sales.getMoney();
     }
 }
 
