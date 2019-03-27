@@ -18,7 +18,7 @@ describe('SalesTableClass', function() {
         expect(sales.getMoney()).equal(2000);
     });
 
-    it('Deberia retornar el monto total para una sola venta', function() {
+    it('Deberia retornar el monto total para varias ventas', function() {
         let sales = new SalesTable([
             ['2019-05-21 14:00:00', 2000],
             ['2019-05-21 15:00:00', 4000]
