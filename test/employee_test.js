@@ -1,3 +1,5 @@
+import SalesTable from "../SalesTable";
+
 let expect = require('chai').expect;
 
 import Employee from '../Employee.js';
@@ -51,6 +53,19 @@ describe('EmployeeClass', function() {
         ]);
         let employee = new Employee('Rodrigo', 'Horas', 200, schedule);
         expect(employee.getSalary()).equal(1000);
+    });
+
+    it('Deberia retornar la comision de Jorge', function() {
+        let schedule = new ScheduleTable([
+            ['2019-05-21 14:00:00', '2019-05-21 16:00:00'],
+            ['2019-05-21 18:00:00', '2019-05-21 21:00:00']
+        ]);
+        let sales = new SalesTable([
+            ['2019-05-21 14:00:00', 2000],
+            ['2019-05-21 15:00:00', 4000]
+        ]);
+        let employee = new Employee('Jorge', 'Fijo', 1000, schedule, 0.5, sales);
+        expect(employee.getCommision()).equal(4000);
     });
 
 });

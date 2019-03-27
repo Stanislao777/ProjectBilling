@@ -24,6 +24,10 @@ class Employee {
         }
         throw new Error('Empleado no especificado');
     }
+
+    getCommision() {
+        return 4000;
+    }
 }
 
 module.exports = Employee;
