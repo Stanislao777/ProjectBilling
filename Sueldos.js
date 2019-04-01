@@ -1,4 +1,4 @@
-class ScheduleTable {
+class Sueldos {
 
     constructor(schedulesTimes) {
         this.schedulesTimes = [];
@@ -17,4 +17,4 @@ class ScheduleTable {
 
 }
 
-module.exports = ScheduleTable;
+module.exports = Sueldos;

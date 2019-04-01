@@ -1,6 +1,6 @@
 let expect = require('chai').expect;
 
-import ScheduleTable from '../ScheduleTable';
+import ScheduleTable from '../Sueldos';
 
 describe('ScheduleTableClass', function() {
 
