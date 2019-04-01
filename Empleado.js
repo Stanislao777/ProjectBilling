@@ -1,7 +1,21 @@
 class Empleado {
 
+    constructor(nombre, ci, calcularSalario) {
+        this.nombre = nombre;
+        this.ci = ci;
+        this.calcularSalario = calcularSalario;
+    }
+
     obtenerNombre() {
-        return 'Jorge';
+        return this.nombre;
+    }
+
+    obtenerCi() {
+        return this.ci;
+    }
+
+    obtenerSalario() {
+        return this.calcularSalario.obtenerSalario();
     }
 
 }
