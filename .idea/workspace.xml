@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53a67516-652f-447d-92bc-f7f235e34c5f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Empleado.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/empleado_test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employee.js" beforeDir="false" afterPath="$PROJECT_DIR$/Empleados.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalesTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/TablaVentas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScheduleTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/Sueldos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/employee_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/empleados_test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/salesTable_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/salesTable_test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/scheduleTable_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/scheduleTable_test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Empleados.js" beforeDir="false" afterPath="$PROJECT_DIR$/CalcularSalario.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/empleados_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/calcularSalario_test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +19,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Empleados.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CalcularSalario.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state>
+              <caret column="21" selection-start-column="6" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/empleado_test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Empleado.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -42,10 +56,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/empleados_test.js">
+        <entry file="file://$PROJECT_DIR$/test/calcularSalario_test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="81" column="52" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="52" />
+            <state relative-caret-position="119">
+              <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="e#79#117#0" expanded="true" />
               </folding>
@@ -80,6 +94,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>employee</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -97,6 +116,10 @@
         <option value="$PROJECT_DIR$/test/salesTable_test.js" />
         <option value="$PROJECT_DIR$/test/empleados_test.js" />
         <option value="$PROJECT_DIR$/Empleados.js" />
+        <option value="$PROJECT_DIR$/CalcularSalario.js" />
+        <option value="$PROJECT_DIR$/test/calcularSalario_test.js" />
+        <option value="$PROJECT_DIR$/test/empleado_test.js" />
+        <option value="$PROJECT_DIR$/Empleado.js" />
       </list>
     </option>
   </component>
@@ -197,7 +220,7 @@
       <workItem from="1553615386693" duration="901000" />
       <workItem from="1553625887649" duration="2849000" />
       <workItem from="1553696709092" duration="7283000" />
-      <workItem from="1554123694614" duration="3118000" />
+      <workItem from="1554123694614" duration="3860000" />
     </task>
     <servers />
   </component>
@@ -207,7 +230,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21457000" />
+    <option name="totallyTimeSpent" value="22199000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -296,20 +319,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/empleados_test.js">
+    <entry file="file://$PROJECT_DIR$/CalcularSalario.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="81" column="52" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="52" />
+        <state>
+          <caret column="21" selection-start-column="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/calcularSalario_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="e#79#117#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Empleados.js">
+    <entry file="file://$PROJECT_DIR$/test/empleado_test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="153">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Empleado.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
         </state>
       </provider>
     </entry>

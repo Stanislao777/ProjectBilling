@@ -1,16 +1,11 @@
-class Empleados {
+class CalcularSalario {
 
-    constructor(nombre, tipo, monto_kardex, sueldos, comision_percentaje, ventas) {
-        this.nombre = nombre;
+    constructor(tipo, monto_kardex, sueldos, comision_percentaje, ventas) {
         this.tipo = tipo;
         this.montoKardex = monto_kardex;
         this.sueldos = sueldos;
         this.comisionPorcentaje = comision_percentaje;
         this.ventas = ventas;
-    }
-
-    obtenerNombre() {
-        return this.nombre;
     }
 
     obtenerTipo() {
@@ -31,4 +26,4 @@ class Empleados {
     }
 }
 
-module.exports = Empleados;
+module.exports = CalcularSalario;
