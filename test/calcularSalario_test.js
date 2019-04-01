@@ -3,24 +3,9 @@ import SalesTable from "../TablaVentas";
 let expect = require('chai').expect;
 
 import CalcularSalario from '../CalcularSalario.js';
-import ScheduleTable from '../Sueldos.js';
+import ScheduleTable from '../Horarios.js';
 
 describe('CalcularSalario', function() {
-
-    it('Deberia retornar el tipo Fijo', function() {
-        let calcularSalario = new CalcularSalario('Fijo');
-        expect(calcularSalario.obtenerTipo()).equal('Fijo');
-    });
-
-    it('Deberia retornar el tipo Horas', function() {
-        let calcularSalario = new CalcularSalario('Horas');
-        expect(calcularSalario.obtenerTipo()).equal('Horas');
-    });
-
-    it('Deberia retornar el tipo Comision', function() {
-        let calcularSalario = new CalcularSalario('Comision');
-        expect(calcularSalario.obtenerTipo()).equal('Comision');
-    });
 
     it('Deberia retornar el sueldo de un empleado Fijo', function() {
         let calcularSalario = new CalcularSalario('Fijo', 1000);

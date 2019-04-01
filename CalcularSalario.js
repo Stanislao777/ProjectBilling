@@ -1,28 +1,23 @@
+import CalcularSalarioHoras from './CalcularSalarioHoras';
+import CalcularSalarioFijo from './CalcularSalarioFijo';
+import CalcularSalarioComision from './CalcularSalarioComision';
+
 class CalcularSalario {
 
     constructor(tipo, monto_kardex, sueldos, comision_percentaje, ventas) {
-        this.tipo = tipo;
-        this.montoKardex = monto_kardex;
-        this.sueldos = sueldos;
-        this.comisionPorcentaje = comision_percentaje;
-        this.ventas = ventas;
-    }
-
-    obtenerTipo() {
-        return this.tipo;
+        if(tipo === 'Horas') {
+            this.calcularSalario = new CalcularSalarioHoras(monto_kardex, sueldos);
+        }
+        if(tipo === 'Fijo') {
+            this.calcularSalario = new CalcularSalarioFijo(monto_kardex);
+        }
+        if(tipo === 'Comision') {
+            this.calcularSalario = new CalcularSalarioComision(monto_kardex, comision_percentaje, ventas);
+        }
     }
 
     obtenerSalario() {
-        if(this.tipo === 'Horas') {
-            return this.montoKardex * this.sueldos.getHours();
-        }
-        if(this.tipo === 'Fijo') {
-            return this.montoKardex;
-        }
-        if(this.tipo === 'Comision') {
-            return this.montoKardex + this.comisionPorcentaje * this.ventas.ObtenerDinero();
-        }
-        throw new Error('Empleado no especificado');
+        return this.calcularSalario.obtenerSalario();
     }
 }
 
