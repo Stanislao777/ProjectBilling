@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53a67516-652f-447d-92bc-f7f235e34c5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CalculadoraFechaPago.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculadoraFechaPago.js" beforeDir="false" afterPath="$PROJECT_DIR$/CalculadoraFechaPago.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/calcularFechaPago_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/calcularFechaPago_test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -38,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CalculadoraFechaPago.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="153">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -104,8 +103,8 @@
         <option value="$PROJECT_DIR$/test/ventas_test.js" />
         <option value="$PROJECT_DIR$/test/horarios_test.js" />
         <option value="$PROJECT_DIR$/test/CalculadoraFechaPago.js" />
-        <option value="$PROJECT_DIR$/CalculadoraFechaPago.js" />
         <option value="$PROJECT_DIR$/test/calcularFechaPago_test.js" />
+        <option value="$PROJECT_DIR$/CalculadoraFechaPago.js" />
       </list>
     </option>
   </component>
@@ -212,7 +211,7 @@
       <workItem from="1553625887649" duration="2849000" />
       <workItem from="1553696709092" duration="7283000" />
       <workItem from="1554123694614" duration="7734000" />
-      <workItem from="1554730712344" duration="3242000" />
+      <workItem from="1554730712344" duration="4260000" />
     </task>
     <servers />
   </component>
@@ -222,7 +221,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29315000" />
+    <option name="totallyTimeSpent" value="30333000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -369,8 +368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CalculadoraFechaPago.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="153">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
         </state>
       </provider>
     </entry>

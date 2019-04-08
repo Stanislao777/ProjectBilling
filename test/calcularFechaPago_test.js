@@ -7,7 +7,7 @@ describe('calcularFechaPago',function () {
         let fecha = new Date("2019-04-05 14:00:00");
         let calculadoraFechaPago = new CalculadoraFechaPago('Horas',fecha);
 
-
+        expect(calculadoraFechaPago.estaDisponibleParaPagar()).equal(true);
     });
 
 });
