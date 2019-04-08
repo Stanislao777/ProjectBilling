@@ -7,7 +7,7 @@ class Horarios {
         });
     }
 
-    getHours() {
+    obtenerHoras() {
         let response = 0;
         this.schedulesTimes.forEach(schedule => {
             response += Number.parseInt((schedule[0] - schedule[1]) / 3600000);

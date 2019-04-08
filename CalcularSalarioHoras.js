@@ -6,7 +6,7 @@ class CalcularSalarioHoras {
     }
 
     obtenerSalario() {
-        return this.salario_por_hora * this.horarios.getHours();
+        return this.salario_por_hora * this.horarios.obtenerHoras();
     }
 }
 

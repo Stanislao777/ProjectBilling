@@ -2,7 +2,7 @@ let expect = require('chai').expect;
 
 import TablaVentas from '../TablaVentas';
 
-describe('ClaseTablaVentas', function() {
+describe('ClaseVentas', function() {
 
     it('Deberia retornar el monto total para una sola venta', function() {
         let ventas = new TablaVentas([
