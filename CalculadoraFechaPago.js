@@ -1,13 +1,17 @@
-class CalculadoraFechaPago {
-    constructor(tipo, fecha){
-        if (tipo==='Horas') {
-            this.fecha = fecha;
-        }
+"
 
+class CalculadoraFechaPago {
+    constructor(tipo, fechaInicial, fechaFinal){
+        if (tipo==='Horas') {
+            this.calcularFechaPago = new CalculadoraFechaPago(fechaInicial);
+        }
+        if (tipo === "Comision"){
+            this.calcularFechaPago = new CalculadoraFechaPagoComision(fechaInicial, fechaFinal);
+        }
     }
 
     estaDisponibleParaPagar(){
-        return this.fecha.getDay()===5;
+        return this.calcularFechaPago.determinarDisponibilidadDePago();
     }
 
 }
