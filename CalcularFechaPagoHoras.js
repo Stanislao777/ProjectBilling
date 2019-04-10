@@ -3,8 +3,13 @@ class CalcularFechaPagoHoras {
         this.fecha = fecha;
     }
 
-    determinarDisponibilidadDePago() {
-        return this.fecha.getDay() === 5;
+    inicioDePago() {
+        let ultimoFechaDeLaSemana = new Date(this.fecha.getFullYear(), this.fecha.getMonth(), this.fecha.getDate());
+        while(ultimoFechaDeLaSemana.getDay() != 5) {
+            ultimoFechaDeLaSemana.setDate(ultimoFechaDeLaSemana.getDate() + 1);
+        }
+        return ultimoFechaDeLaSemana.getDate() + '-' + (ultimoFechaDeLaSemana.getMonth() + 1) + '-' + ultimoFechaDeLaSemana.getFullYear();
+        //return this.fecha.getDay() === 5;
     }
 }
 

@@ -15,8 +15,8 @@ class CalculadoraFechaPago {
         }
     }
 
-    estaDisponibleParaPagar() {
-        return this.calcularFechaPago.determinarDisponibilidadDePago();
+    inicioDePago() {
+        return this.calcularFechaPago.inicioDePago();
     }
 }
 
