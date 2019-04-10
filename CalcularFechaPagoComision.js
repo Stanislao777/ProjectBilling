@@ -1,7 +1,6 @@
 class CalcularFechaPagoComision {
-    constructor(fechaInicial, fechaFinal) {
+    constructor(fechaInicial) {
         this.fechaInicial = fechaInicial;
-        this.fechaFinal = fechaFinal;
     }
 
     agregarSemanaHastaViernes(fecha, cantidadDeSemanas) {
@@ -14,9 +13,6 @@ class CalcularFechaPagoComision {
     }
 
     inicioDePago() {
-        //let diferenciaEnDias = (this.fechaFinal - this.fechaInicial) / (86400000);
-        //let dia = this.fechaFinal.getDay();
-        //return (diferenciaEnDias > 10) && (dia ===
         let ultimoFechaDeLaSemana = new Date(this.fechaInicial.getFullYear(), this.fechaInicial.getMonth(), this.fechaInicial.getDate());
         ultimoFechaDeLaSemana = this.agregarSemanaHastaViernes(ultimoFechaDeLaSemana, 2);
         return ultimoFechaDeLaSemana.getDate() + '-' + (ultimoFechaDeLaSemana.getMonth() + 1) + '-' + ultimoFechaDeLaSemana.getFullYear();

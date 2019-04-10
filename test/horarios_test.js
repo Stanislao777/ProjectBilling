@@ -25,4 +25,11 @@ describe('ScheduleTableClass', function() {
         ]);
         expect(schedule.obtenerHoras()).equal(4);
     });
+
+    it('Deberia retornar 2 horas extras', function() {
+        let schedule = new ScheduleTable([
+            ['2019-05-21 10:00:00', '2019-05-21 22:00:00']
+        ]);
+        expect(schedule.obtenerHorasExtra()).equal(4);
+    });
 });

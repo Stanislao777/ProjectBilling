@@ -9,7 +9,6 @@ class CalcularFechaPagoHoras {
             ultimoFechaDeLaSemana.setDate(ultimoFechaDeLaSemana.getDate() + 1);
         }
         return ultimoFechaDeLaSemana.getDate() + '-' + (ultimoFechaDeLaSemana.getMonth() + 1) + '-' + ultimoFechaDeLaSemana.getFullYear();
-        //return this.fecha.getDay() === 5;
     }
 }
 

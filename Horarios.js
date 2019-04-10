@@ -10,7 +10,24 @@ class Horarios {
     obtenerHoras() {
         let response = 0;
         this.schedulesTimes.forEach(schedule => {
-            response += Number.parseInt((schedule[0] - schedule[1]) / 3600000);
+            let horasTrabajadas = Number.parseInt((schedule[0] - schedule[1]) / 3600000);
+            if(horasTrabajadas > 8) {
+                response += 8;
+            }
+            else {
+                response += horasTrabajadas;
+            }
+        });
+        return response;
+    }
+
+    obtenerHorasExtra() {
+        let response = 0;
+        this.schedulesTimes.forEach(schedule => {
+            let horasTrabajadas = Number.parseInt((schedule[0] - schedule[1]) / 3600000);
+            if(horasTrabajadas > 8) {
+                response += horasTrabajadas - 8;
+            }
         });
         return response;
     }

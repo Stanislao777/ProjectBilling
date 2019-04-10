@@ -1,15 +1,10 @@
 class CalculadoraFechaPagoFijo {
-    constructor(fechaInicial, fechaFinal) {
+    constructor(fechaInicial) {
         this.fechaInicial = fechaInicial;
-        this.fechaFinal = fechaFinal;
     }
 
     inicioDePago() {
-        let diferenciaEnDias = (this.fechaFinal - this.fechaInicial) / (86400000);
-        let ultimaFechaDelMes = new Date(this.fechaFinal.getFullYear(), this.fechaFinal.getMonth() + 1, 0);
-        /*if (ultimaFechaDelMes.getDate() !== this.fechaFinal.getDate()) {
-            return false;
-        }*/
+        let ultimaFechaDelMes = new Date(this.fechaInicial.getFullYear(), this.fechaInicial.getMonth() + 1, 0);
         if(ultimaFechaDelMes.getDay() === 0) {
             ultimaFechaDelMes.setDate(ultimaFechaDelMes.getDate() - 1);
         }
@@ -17,8 +12,6 @@ class CalculadoraFechaPagoFijo {
             ultimaFechaDelMes.setDate(ultimaFechaDelMes.getDate() - 1);
         }
         return ultimaFechaDelMes.getDate() + '-' + (ultimaFechaDelMes.getMonth() + 1) + '-' + ultimaFechaDelMes.getFullYear();
-        //let ultimoDia = ultimaFechaDelMes.getDay();
-        //return (ultimoDia > 0 && ultimoDia < 6) && (diferenciaEnDias > 5);
     }
 }
 

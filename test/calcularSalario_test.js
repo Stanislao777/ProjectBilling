@@ -35,6 +35,14 @@ describe('CalcularSalario', function() {
         expect(calcularSalario.obtenerSalario()).equal(1000);
     });
 
+    it('Deberia retornar el sueldo de un segundo empleado por Horas Extra', function() {
+        let schedule = new ScheduleTable([
+            ['2019-05-21 10:00:00', '2019-05-21 22:00:00']
+        ]);
+        let calcularSalario = new CalcularSalario('Horas', 100, schedule);
+        expect(calcularSalario.obtenerSalario()).equal(1400);
+    });
+
     it('Deberia retornar el sueldo de un empleado Comision', function() {
         let sales = new SalesTable([
             ['2019-05-21 14:00:00', 2000],
