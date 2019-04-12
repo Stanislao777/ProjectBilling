@@ -8,7 +8,27 @@ import ScheduleTable from '../Horarios.js';
 describe('CalcularSalario', function() {
 
     it('Deberia retornar el sueldo de un empleado Fijo', function() {
-        let calcularSalario = new CalcularSalario('Fijo', 1000);
+        let calcularSalario = new CalcularSalario('Fijo', 1000, null, null, null, '2019-04-01');
+        expect(calcularSalario.obtenerSalario()).equal(1000);
+    });
+
+    it('Deberia retornar el sueldo de un empleado Fijo', function() {
+        let calcularSalario = new CalcularSalario('Fijo', 1000, null, null, null, '2019-04-16');
+        expect(calcularSalario.obtenerSalario()).equal(500);
+    });
+
+    it('Deberia retornar el sueldo de un empleado Fijo', function() {
+        let calcularSalario = new CalcularSalario('Fijo', 900, null, null, null, '2019-04-11');
+        expect(calcularSalario.obtenerSalario()).equal(600);
+    });
+
+    it('Deberia retornar el sueldo de un empleado Fijo', function() {
+        let calcularSalario = new CalcularSalario('Fijo', 1000, null, null, null, '2020-04-01');
+        expect(calcularSalario.obtenerSalario()).equal(0);
+    });
+
+    it('Deberia retornar el sueldo de un empleado Fijo', function() {
+        let calcularSalario = new CalcularSalario('Fijo', 1000, null, null, null, '2019-03-01');
         expect(calcularSalario.obtenerSalario()).equal(1000);
     });
 
