@@ -4,6 +4,7 @@ let expect = require('chai').expect;
 
 import Empleado from '../Empleado.js';
 import CalcularSalario from "../CalcularSalario";
+import GeneradorBoletas from "../GeneradorBoletas";
 
 describe('Empleado', function() {
 
@@ -30,13 +31,17 @@ describe('Empleado', function() {
     it('Deberia retornar el salario del empleado', function() {
         let calcularSalario = new CalcularSalario('Fijo', 1000);
         let empleado = new Empleado('Jorge', 20, calcularSalario);
-        expect(empleado.obtenerSalario()).equal(1000);
+        let generador = new GeneradorBoletas();
+        expect(generador.generarBoleta(empleado)).equal('Nombre: Jorge\nCi: 20\nSueldo: 1000');
+        //expect(empleado.obtenerSalario()).equal(1000);
     });
 
     it('Deberia retornar el salario del empleado', function() {
         let calcularSalario = new CalcularSalario('Fijo', 2000);
         let empleado = new Empleado('Alvaro', 20, calcularSalario);
-        expect(empleado.obtenerSalario()).equal(2000);
+        let generador = new GeneradorBoletas();
+        expect(generador.generarBoleta(empleado)).equal('Nombre: Alvaro\nCi: 20\nSueldo: 2000');
+        //expect(empleado.obtenerSalario()).equal(2000);
     });
 
 });

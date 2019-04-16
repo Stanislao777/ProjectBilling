@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "chai": "^4.2.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "sqlite3": "^4.0.6"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

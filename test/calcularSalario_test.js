@@ -4,6 +4,7 @@ let expect = require('chai').expect;
 
 import CalcularSalario from '../CalcularSalario.js';
 import ScheduleTable from '../Horarios.js';
+import GeneradorBoletas from '../GeneradorBoletas';
 
 describe('CalcularSalario', function() {
 
